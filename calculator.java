@@ -1,5 +1,4 @@
 import java.util.*;
-import java.math.*;
 import java.text.*;
 /**
  * Calculates rating through formula and input from user
@@ -7,7 +6,7 @@ import java.text.*;
  * @Erantha Arachchi
  * @8/23/21
  */
-
+// TODO : add sound functionality for rating special messages
 public class calculator
 {
     public static void main(String[] args)
@@ -62,7 +61,7 @@ public class calculator
         System.out.println("Rating: " + df.format(rating-.01));
         
         // Prints special message based on rating
-        // add sound functionality here?
+        
         if(rating > 1.32)
         {
             System.out.println("Wow, you're even better than s1mple!");
@@ -83,10 +82,12 @@ public class calculator
         {
             System.out.println("You're the carry! Clicking heads comes naturally to you.");
         }
+        System.out.println("");
         System.out.println("Impact: " + df.format(impact));
         System.out.println("");
         System.out.print("Keep in mind this calculator has some error, usually in hundredths.");
         System.out.println("");
         System.out.println("Thank you for using this calculator!");
+        user_input.close();
     }
 }
