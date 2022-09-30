@@ -6,14 +6,77 @@ import java.text.*;
  * @Erantha Arachchi
  * @8/23/21
  */
-// TODO : add sound functionality for rating special messages
+
 public class calculator
 {
+    public static String nearestKey(Map<String, Double> map, double target) {
+        double minDiff = Double.MAX_VALUE;
+        
+        String player = "";
+        for(Map.Entry<String,Double> entry : map.entrySet())
+        {
+            double key = entry.getValue();
+            double diff = Math.abs((double) target - (double) key);
+            if (diff < minDiff) {
+                
+                minDiff = diff;
+                player = entry.getKey();
+            }
+        }
+        return player;
+    }
     public static void main(String[] args)
     {
+        Map<String, Double> playerMap = new HashMap<String, Double>();
         Scanner user_input = new Scanner(System.in);
         DecimalFormat df = new DecimalFormat("0.00");
+            
 
+        // Adding players to compare to user
+        // Top players via HLTV
+        playerMap.put("s1mple", 1.32);
+        playerMap.put("ZywOo", 1.26);
+        playerMap.put("sh1ro", 1.25);
+        playerMap.put("NiKo", 1.23);
+        playerMap.put("Ax1Le", 1.21);
+        playerMap.put("blameF", 1.18);
+        playerMap.put("stavn", 1.15);
+        playerMap.put("electronic", 1.15);
+        playerMap.put("Spinx", 1.13);
+        playerMap.put("b1t", 1.13);
+        playerMap.put("huNter-", 1.13);
+        playerMap.put("broky", 1.12);
+        playerMap.put("Twistzz", 1.12);
+        playerMap.put("ropz", 1.11);
+        playerMap.put("HObbit", 1.11);
+        playerMap.put("rain", 1.08);
+        playerMap.put("syrsoN", 1.07);
+        playerMap.put("dycha", 1.07);
+        playerMap.put("REZ", 1.07);
+        playerMap.put("konfig", 1.06);
+        playerMap.put("TeSeS", 1.05);
+        playerMap.put("tabseN", 1.05);
+        playerMap.put("Magisk", 1.04);
+        playerMap.put("sjuush", 1.04);
+        playerMap.put("jabbi", 1.03);
+        playerMap.put("cadiaN", 1.03);
+        playerMap.put("Perfecto", 1.03);
+        playerMap.put("hades", 1.02);
+        playerMap.put("dupreeh", 1.02);
+        playerMap.put("hampus", 1.01);
+        playerMap.put("Maden", 0.99);
+        playerMap.put("nafany", 0.98);
+        playerMap.put("interz", 0.97);
+        playerMap.put("apEX", 0.96);
+        playerMap.put("JACKZ", 0.95);
+        playerMap.put("Plopski", 0.95);
+        playerMap.put("gla1ve", 0.94);
+        playerMap.put("misutaaa", 0.94);
+        playerMap.put("Snappi", 0.94);
+        playerMap.put("Xyp9x", 0.92);
+        playerMap.put("karrigan", 0.92);
+        playerMap.put("es3tag", 0.91);
+        playerMap.put("tiziaN", 0.90);
         // Initializing stat variables for calculation
         double kast;
         double kpr;
@@ -22,6 +85,7 @@ public class calculator
         double apr;
         double impact;
         double rating;
+        String player = "";
         System.out.println("Welcome to the HLTV Rating 2.0 Calculator!");
         System.out.println("Created by Erantha Arachchi");
         System.out.println("The formula used in this calculator can be found @ https://flashed.gg/posts/reverse-engineering-hltv-rating/");
@@ -31,7 +95,7 @@ public class calculator
 
         // Receive data from user for calculation
         System.out.println("Please input your KAST (% of rounds where player had kill, assist, survived or was traded)");
-        System.out.print("Enter as a percentage without symbol: ");
+        System.out.print("Enter as a percentage without the symbol: ");
         kast = user_input.nextDouble();
         System.out.println("");
 
@@ -50,16 +114,21 @@ public class calculator
         System.out.print("Please input your APR (Assists per Round): ");
         apr = user_input.nextDouble();
         System.out.println("");
-
+        user_input.close();
         //First calculates impact to use in rating calculation.
         impact = (2.13*kpr+(.42*apr)-.41);
         
         rating = ((0.00738764*kast)+(0.35912389*kpr)+(-0.5329508*dpr)+(0.2372603*impact) +(0.0032397*adr)+.1587);
-        
+        rating = rating-.01;
+        //Finds closes player comparison
+        player = nearestKey(playerMap, rating);
+        System.out.println("______________________________________________________________________________________________________________________________________");
+        System.out.println("");
         //Round off rating and impact to display like hltv website
         //Rating calculation seems to have a error of +.01
-        System.out.println("Rating: " + df.format(rating-.01));
-        
+        System.out.println("Rating: " + df.format(rating));
+        System.out.println("Impact: " + df.format(impact));
+        System.out.println("");
         // Prints special message based on rating
         
         if(rating > 1.32)
@@ -82,12 +151,13 @@ public class calculator
         {
             System.out.println("You're the carry! Clicking heads comes naturally to you.");
         }
+        
         System.out.println("");
-        System.out.println("Impact: " + df.format(impact));
+        System.out.println("Your closest pro player comparison is: " + player);
         System.out.println("");
-        System.out.print("Keep in mind this calculator has some error, usually in hundredths.");
+        System.out.println("Keep in mind this calculator has some error, usually in the hundredths.");
         System.out.println("");
         System.out.println("Thank you for using this calculator!");
-        user_input.close();
+        
     }
 }
