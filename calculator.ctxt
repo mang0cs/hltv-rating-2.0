@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=calculator
+comment0.text=\r\n\ Calculates\ rating\ through\ formula\ and\ input\ from\ user\r\n\r\n\ @Erantha\ Arachchi\r\n\ @8/23/21\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
