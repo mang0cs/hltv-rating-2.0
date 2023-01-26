@@ -1,1 +1,2 @@
 # hltv-rating-2.0
+Uses a hashmap to map pro players along with their given HLTV ratings. Asks for user input for stats, calculates rating and then uses a nearestKey method to compare and find the closest rating comparison to calculated rating.
