@@ -36,6 +36,9 @@ public class calculator
         // Top players via HLTV
         playerMap.put("s1mple", 1.25);
         playerMap.put("ZywOo", 1.24);
+        playerMap.put("m0nesy", 1.15);
+        playerMap.put("YEKINDAR", 1.13);
+        playerMap.put("frozen", 1.14);
         playerMap.put("sh1ro", 1.25);
         playerMap.put("NiKo", 1.21);
         playerMap.put("Ax1Le", 1.21);
@@ -65,12 +68,9 @@ public class calculator
         playerMap.put("hampus", 0.99);
         playerMap.put("Maden", 1.00);
         playerMap.put("nafany", 0.98);
-
         playerMap.put("apEX", 0.90);
-
         playerMap.put("oSee", 1.04);
         playerMap.put("gla1ve", 0.92);
-
         playerMap.put("Snappi", 0.93);
         playerMap.put("Xyp9x", 0.94);
         playerMap.put("karrigan", 0.91);
