@@ -157,6 +157,13 @@ public class calculator
         System.out.println("");
         System.out.println("Keep in mind this calculator has some error, usually in the hundredths.");
         System.out.println("");
+
+        //TODO add a way to calculate multiple ratings
+      /*  System.out.println("Would you like to calculate another rating?");
+        System.out.print("Type 1 for yes, 0 to exit: ");
+        int ans = user_input.nextInt();
+        if((ans % 2) == 0)
+            */
         System.out.println("Thank you for using this calculator!");
         
     }
