@@ -68,7 +68,7 @@ public class calculator
 
         playerMap.put("apEX", 0.90);
 
-
+        playerMap.put("oSee", 1.04);
         playerMap.put("gla1ve", 0.92);
 
         playerMap.put("Snappi", 0.93);
@@ -131,7 +131,7 @@ public class calculator
         System.out.println("");
         // Prints special message based on rating
         
-        if(rating > 1.32)
+        if(rating > 1.25)
         {
             System.out.println("Wow, you're even better than s1mple!");
         }
@@ -147,7 +147,7 @@ public class calculator
         {
             System.out.println("You're above average! Nice work!");
         }
-        else if(rating > 1.10 && rating <= 1.32)
+        else if(rating > 1.10 && rating <= 1.25)
         {
             System.out.println("You're the carry! Clicking heads comes naturally to you.");
         }
