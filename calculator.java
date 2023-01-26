@@ -34,49 +34,49 @@ public class calculator
 
         // Adding players to compare to user
         // Top players via HLTV
-        playerMap.put("s1mple", 1.32);
-        playerMap.put("ZywOo", 1.26);
+        playerMap.put("s1mple", 1.25);
+        playerMap.put("ZywOo", 1.24);
         playerMap.put("sh1ro", 1.25);
-        playerMap.put("NiKo", 1.23);
+        playerMap.put("NiKo", 1.21);
         playerMap.put("Ax1Le", 1.21);
-        playerMap.put("blameF", 1.18);
+        playerMap.put("blameF", 1.20);
         playerMap.put("stavn", 1.15);
-        playerMap.put("electronic", 1.15);
-        playerMap.put("Spinx", 1.13);
-        playerMap.put("b1t", 1.13);
-        playerMap.put("huNter-", 1.13);
-        playerMap.put("broky", 1.12);
+        playerMap.put("electronic", 1.08);
+        playerMap.put("Spinx", 1.10);
+        playerMap.put("b1t", 1.07);
+        playerMap.put("huNter-", 1.11);
+        playerMap.put("broky", 1.14);
         playerMap.put("Twistzz", 1.12);
-        playerMap.put("ropz", 1.11);
+        playerMap.put("ropz", 1.12);
         playerMap.put("HObbit", 1.11);
         playerMap.put("rain", 1.08);
-        playerMap.put("syrsoN", 1.07);
-        playerMap.put("dycha", 1.07);
+        playerMap.put("syrsoN", 1.08);
+        playerMap.put("dycha", 1.08);
         playerMap.put("REZ", 1.07);
         playerMap.put("konfig", 1.06);
-        playerMap.put("TeSeS", 1.05);
-        playerMap.put("tabseN", 1.05);
-        playerMap.put("Magisk", 1.04);
+        playerMap.put("TeSeS", 1.07);
+        playerMap.put("tabseN", 1.03);
+        playerMap.put("Magisk", 1.05);
         playerMap.put("sjuush", 1.04);
         playerMap.put("jabbi", 1.03);
-        playerMap.put("cadiaN", 1.03);
+        playerMap.put("cadiaN", 1.06);
         playerMap.put("Perfecto", 1.03);
-        playerMap.put("hades", 1.02);
-        playerMap.put("dupreeh", 1.02);
-        playerMap.put("hampus", 1.01);
-        playerMap.put("Maden", 0.99);
+        playerMap.put("dupreeh", 1.01);
+        playerMap.put("hampus", 0.99);
+        playerMap.put("Maden", 1.00);
         playerMap.put("nafany", 0.98);
-        playerMap.put("interz", 0.97);
-        playerMap.put("apEX", 0.96);
-        playerMap.put("JACKZ", 0.95);
-        playerMap.put("Plopski", 0.95);
-        playerMap.put("gla1ve", 0.94);
-        playerMap.put("misutaaa", 0.94);
-        playerMap.put("Snappi", 0.94);
-        playerMap.put("Xyp9x", 0.92);
-        playerMap.put("karrigan", 0.92);
-        playerMap.put("es3tag", 0.91);
-        playerMap.put("tiziaN", 0.90);
+
+        playerMap.put("apEX", 0.90);
+
+
+        playerMap.put("gla1ve", 0.92);
+
+        playerMap.put("Snappi", 0.93);
+        playerMap.put("Xyp9x", 0.94);
+        playerMap.put("karrigan", 0.91);
+        playerMap.put("es3tag", 0.94);
+        playerMap.put("dexter", 0.92)
+        playerMap.put("nitr0", .89);
         // Initializing stat variables for calculation
         double kast;
         double kpr;
