@@ -75,7 +75,7 @@ public class calculator
         playerMap.put("Xyp9x", 0.94);
         playerMap.put("karrigan", 0.91);
         playerMap.put("es3tag", 0.94);
-        playerMap.put("dexter", 0.92)
+        playerMap.put("dexter", 0.92);
         playerMap.put("nitr0", .89);
         // Initializing stat variables for calculation
         double kast;
